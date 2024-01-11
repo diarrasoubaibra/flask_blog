@@ -1,0 +1,1 @@
+document.getElementById('demo').innerHTML="Ceci a été fait avec js";
