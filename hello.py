@@ -41,8 +41,12 @@ def update(id):
                                    form=form,
                                    name_to_update=name_to_update)
         except:
-            flash("Utilisateur mis ajout avec succes!")
+            flash("Erreur, veillez rééssayer plus tard")
             return render_template('update.html',
+                                   form=form,
+                                   name_to_update=name_to_update)
+    else:
+        return render_template('update.html',
                                    form=form,
                                    name_to_update=name_to_update)
 
